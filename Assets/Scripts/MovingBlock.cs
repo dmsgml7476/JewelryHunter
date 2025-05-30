@@ -66,7 +66,7 @@ public class MovingBlock : MonoBehaviour
                     endY = true;    //Y 방향 이동 종료
                 }
                 //블록 이동
-                transform.Translate(new Vector3(-perDX, -perDY, defPos.z));
+                transform.Translate(new Vector3(-perDX, -perDY, 0));
             }
             else
             {
@@ -82,7 +82,7 @@ public class MovingBlock : MonoBehaviour
                     endY = true;    //Y 방향 이동 종료
                 }
                 //블록 이동
-                Vector3 v = new Vector3(perDX, perDY, defPos.z);
+                Vector3 v = new Vector3(perDX, perDY, 0);
                 transform.Translate(v);
             }
 
